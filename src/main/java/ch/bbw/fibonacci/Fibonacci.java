@@ -1,0 +1,20 @@
+package ch.bbw.fibonacci;
+
+public class Fibonacci {
+
+    public int calcFibonacci(int n) {
+        if (n == 0) {
+            return 0;
+        } else if (n == 1) {
+            return 1;
+        } else {
+            return calcFibonacci(n - 1) + calcFibonacci(n - 2);
+        }
+    }
+
+    public void printFibonacci(int number) {
+        for (int i = 0; i <= number; i++) {
+            System.out.println(calcFibonacci(i));
+        }
+    }
+}
